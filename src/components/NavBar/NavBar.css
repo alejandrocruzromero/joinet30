@@ -54,6 +54,10 @@
     height: 5rem;
     background-color: #99040b;
     padding: 0 10%;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: center
 }
 
 .header nav {

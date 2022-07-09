@@ -5,7 +5,7 @@ import ItemDetail from '../ItemDetail/ItemDetail'
 import './ItemDetailContainer.css'
 
 
-function ItemDetailContainer(){
+function ItemDetailContainer(props){
     const params = useParams()
     const [ItemFetch,setItemsFetch] = useState([])    
     const FetchItems = () =>{
@@ -31,7 +31,7 @@ function ItemDetailContainer(){
 
     return(
         <div>            
-            <ItemDetail
+            <ItemDetail 
              nombre = {ItemFetch.name} 
              id = {ItemFetch.id} 
              price = {ItemFetch.price} 
